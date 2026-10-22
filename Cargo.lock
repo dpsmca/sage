@@ -2691,6 +2691,7 @@ dependencies = [
  "sage-core",
  "serde",
  "serde_json",
+ "serde_jsonc2",
  "sysinfo",
  "url",
 ]
@@ -2713,6 +2714,7 @@ dependencies = [
  "sage-core",
  "serde",
  "serde_json",
+ "serde_jsonc2",
  "thiserror 1.0.69",
  "timsrust",
  "tokio",
@@ -2875,6 +2877,18 @@ dependencies = [
  "serde",
  "serde_core",
  "zmij",
+]
+
+[[package]]
+name = "serde_jsonc2"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9e0c4f368ca87a531bdade1fe058784333db407ab8ca9510c301ea98ee469452"
+dependencies = [
+ "itoa",
+ "memchr",
+ "ryu",
+ "serde",
 ]
 
 [[package]]

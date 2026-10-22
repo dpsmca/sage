@@ -147,7 +147,7 @@ where
     read_and_execute(path, |mut bf| async move {
         let mut contents = String::new();
         bf.read_to_string(&mut contents).await?;
-        Ok(serde_json::from_str(&contents)?)
+        Ok(serde_jsonc2::from_str(&contents)?)
     })
 }
 

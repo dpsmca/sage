@@ -161,6 +161,8 @@ pub enum Error {
     IO(#[from] tokio::io::Error),
     #[error(transparent)]
     Json(#[from] serde_json::Error),
+    #[error(transparent)]
+    Jsonc(#[from] serde_jsonc2::Error),
     #[error("MzML error: {0}")]
     MzML(#[from] mzml::MzMLError),
     #[error("TDF error: {0}")]
