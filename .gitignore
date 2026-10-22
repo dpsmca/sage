@@ -11,3 +11,7 @@ data/
 *.fasta
 *.fas
 **/*.DS_Store
+
+# IDE
+.idea/
+.vscode/
